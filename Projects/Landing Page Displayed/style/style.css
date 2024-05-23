@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bar-width: 60px;
+    --bar-height: 8px;
+    --hamburger-gap: 6px;
+    --foreground: #333;
+    --background: white;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.gamburger {
+    display: none;
+}
+
+
+
+.navBar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: white;
+}
+
+
+#navBox {
+    list-style: none;
+    display: flex;
+    margin-right: 40px;
+}
+
+.rowBox {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.linkRow {
+    color: gray;
+    text-decoration: none;
+    font-style: italic;
+
+}
+
+.linkRow:hover {
+    color: white;
+    background-color: gray;
+
+
+}
+
+#navPhoto {
+    width: 15rem;
+    height: 4rem;
+}
+
+.myWork {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../Images/graybgc.jpg");
+    background-repeat: inherit;
+    background-position: center;
+
+    text-align: center;
+    height: 460px;
+
+
+}
+
+.myWork h1 {
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    margin-top: 50px;
+    background-image: url("../Images/matrixwallh1.jpg");
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+
+
+}
+
+.myWork p {
+
+    text-align: center;
+    width: 52.75rem;
+    font-weight: 800;
+    font-size: 1.4rem;
+    background-image: url("../Images/matrixwallh1.jpg");
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* margin-bottom: 50px; */
+
+}
+
+.btnBox {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: row-reverse;
+
+}
+
+.btn {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.ref {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.2rem;
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn:hover {
+    background-image: url("../Images/matrixwallh1.jpg");
+    background-position: center;
+    color: transparent;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+}
+
+.btn:hover .ref {
+    color: white;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+
+}
