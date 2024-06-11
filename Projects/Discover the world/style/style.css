@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5EEFF;
+}
+
+.containerOne {
+    width: 1244px;
+    margin: 20px auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15px;
+    grid-template-areas:
+        "pic1 pic2 header header"
+        "pic3 pic4 header header"
+        "pic5 pic6 pic7 pic8"
+        "container container pic9 pic10"
+        "container container pic11 pic12"
+        "container container pic13 pic14";
+    padding: 0 20px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.pic1 {
+    grid-area: pic4;
+}
+
+.pic2 {
+    grid-area: pic2;
+}
+
+.pic3 {
+    grid-area: pic1;
+}
+
+.pic4 {
+    grid-area: pic3;
+}
+
+.pic5 {
+    grid-area: pic6;
+}
+
+.pic6 {
+    grid-area: pic8;
+}
+
+.pic7 {
+    grid-area: pic5;
+}
+
+.pic8 {
+    grid-area: pic7;
+}
+
+.pic9 {
+    grid-area: pic10;
+}
+
+.pic10 {
+    grid-area: pic11;
+}
+
+.pic11 {
+    grid-area: pic12;
+}
+
+.pic12 {
+    grid-area: pic13;
+}
+
+.pic13 {
+    grid-area: pic14;
+}
+
+.pic14 {
+    grid-area: pic9;
+}
+
+.header {
+    grid-area: header;
+}
+
+.container {
+    grid-area: container;
+}
+
+.header {
+    position: relative;
+    background-color: #020253;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header section {
+    position: absolute;
+    text-align: center;
+    padding: 75px;
+}
+
+.header h1 {
+    color: #0EE1DA;
+    font-size: 61px;
+    font-family: "Assistant";
+}
+
+.header p {
+    color: #F9F9F9;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: "Assistant";
+}
+
+.container {
+    position: relative;
+    background-color: #8E097C;
+    /* overflow: auto; */
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 35px;
+    color: #FFFFFF;
+    font-family: "Assistant";
+}
+
+.heading p {
+    font-size: 20px;
+    color: #F9F9F9;
+    margin-top: 23px;
+    font-family: "Assistant";
+}
+
+.forms {
+    margin-top: 45.75px;
+}
+
+.label,
+.expo {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 25px;
+}
+
+.label label {
+    font-size: 16px;
+    color: #0EE1DA;
+}
+
+.expo label {
+    font-size: 16px;
+    color: #0EE1DA;
+}
+
+.label input {
+    height: 60px;
+    width: 97%;
+}
+
+.expo textarea {
+    height: 172px;
+    width: 97%;
+}
+
+.form {
+    position: absolute;
+    padding: 63px 55px 88px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: -10px;
+}
+
+.btn {
+    height: 60px;
+    width: 97%;
+    margin-top: 15px;
+    background-color: #0EE1DA;
+    background: #0EE1DA 0% 0% no-repeat padding-box;
+    font-size: 24px;
+
+}
+
+@media(max-width:768px) {
+    .containerOne {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        gap: 12px;
+        grid-template-areas:
+            "pic1 pic2"
+            "pic3 pic4"
+            "pic5 pic6"
+            "pic7 pic8"
+            "container container"
+            "container container"
+            "container container"
+            "pic9 pic10"
+            "pic11 pic12"
+            "pic13 pic14";
+    }
+
+
+
+    .pic1 {
+        grid-area: pic4;
+    }
+
+    .pic2 {
+        grid-area: pic2;
+    }
+
+    .pic3 {
+        grid-area: pic1;
+    }
+
+    .pic4 {
+        grid-area: pic3;
+    }
+
+    .pic5 {
+        grid-area: pic6;
+    }
+
+    .pic6 {
+        grid-area: pic8;
+    }
+
+    .pic7 {
+        grid-area: pic5;
+    }
+
+    .pic8 {
+        grid-area: pic7;
+    }
+
+    .pic9 {
+        grid-area: pic10;
+    }
+
+    .pic10 {
+        grid-area: pic11;
+    }
+
+    .pic11 {
+        grid-area: pic12;
+    }
+
+    .pic12 {
+        grid-area: pic13;
+    }
+
+    .pic13 {
+        grid-area: pic14;
+    }
+
+    .pic14 {
+        grid-area: pic9;
+    }
+
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        aspect-ratio: 1.1;
+    }
+
+    .mobileSpacing {
+        width: 100%;
+        aspect-ratio: 1.1;
+    }
+
+    .container {
+        grid-area: container;
+    }
+
+    /*  .header {
+        height: 292px;
+    }
+
+    .container {
+        height: 438px;
+    } */
+}
+
+@media(max-width:576px) {
+    .containerOne {
+        grid-template-rows: repeat(11, 1fr);
+        grid-template-areas:
+            "pic1 pic2"
+            "pic3 pic4"
+            "pic5 pic6"
+            "pic7 pic8"
+            "container container"
+            "container container"
+            "container container"
+            "container container"
+            "pic9 pic10"
+            "pic11 pic12"
+            "pic13 pic14";
+    }
+}
+
+/* .label input {
+    height: 60px;
+} */
+
+/* .expo textarea {
+    height: 95px;
+}
+ */
+/* .btn {
+    height: 33px;
+}
+ */
+/* .forms {
+    margin-top: 0;
+}
+ */
+/* .heading h1 {
+    font-size: 25px;
+
+} */
+
+/* .form {
+    padding: 58px 25px;
+
+} */
+
+/* 
+.heading p {
+    font-size: 15px;
+} */

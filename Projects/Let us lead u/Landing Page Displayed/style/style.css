@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --bar-width: 60px;
+    --bar-height: 8px;
+    --hamburger-gap: 6px;
+    --foreground: #333;
+    --background: white;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.gamburger {
+    display: none;
+}
+
+
+
+.navBar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: white;
+}
+
+
+#navBox {
+    list-style: none;
+    display: flex;
+    margin-right: 40px;
+}
+
+.rowBox {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.linkRow {
+    color: gray;
+    text-decoration: none;
+    font-style: italic;
+
+}
+
+.linkRow:hover {
+    color: white;
+    background-color: gray;
+
+
+}
+
+#navPhoto {
+    width: 15rem;
+    height: 4rem;
+}
+
+.myWork {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../Images/graybgc.jpg");
+    background-repeat: inherit;
+    background-position: center;
+    box-shadow: 0px 3px 6px #00000029;
+    text-align: center;
+    height: 460px;
+
+
+}
+
+.myWork h1 {
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    margin-top: 50px;
+    background-image: url("../Images/matrixwallh1.jpg");
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+
+
+}
+
+.myWork p {
+
+    text-align: center;
+    width: 52.75rem;
+    font-weight: 800;
+    font-size: 1.4rem;
+    background-image: url("../Images/matrixwallh1.jpg");
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* margin-bottom: 50px; */
+
+}
+
+.btnBox {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: row-reverse;
+
+}
+
+.btn {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.ref {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.2rem;
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn:hover {
+    background-image: url("../Images/matrixwallh1.jpg");
+    background-position: center;
+    color: transparent;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+}
+
+.btn:hover .ref {
+    color: white;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.project {
+    background: rgb(174, 199, 238);
+    background: radial-gradient(circle, rgba(174, 199, 238, 1) 0%, rgba(35, 38, 40, 1) 81%);
+    height: 1014px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project img {
+    width: 60vw;
+    height: 60%;
+    margin-bottom: 130px;
+}
+
+.rights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-image: url("../Images/copyrighting.png");
+    background-position: center;
+}
+
+.rights p {
+    color: red;
+    font-size: 2rem;
+    font-weight: 800;
+
+}
+
+@media (max-width:850px) {
+    .nav {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .imgRef {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    #navBox {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .gamburger::before,
+    .gamburger::after,
+    .gamburger input {
+        content: "";
+        width: var(--bar-width);
+        height: var(--bar-height);
+        background-color: var(--foreground);
+        transform-origin: left center;
+        transition: opacity var(--animation-timing), width var(--animation-timing),
+            rotate var(--animation-timing), translate var(--animation-timing);
+    }
+
+
+    .gamburger {
+        --x-width: calc(var(--hamburger-height) * 1.41421356237);
+        display: flex;
+        flex-direction: column;
+        gap: var(--hamburger-gap);
+        border-radius: 9999px;
+        width: max-content;
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .gamburger input {
+        appearance: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        pointer-events: none;
+    }
+
+    .gamburger:has(input:checked)::before {
+        rotate: 45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / -2);
+    }
+
+    .gamburger:has(input:checked)::after {
+        rotate: -45deg;
+        width: var(--x-width);
+        translate: 0 calc(var(--bar-height) / 2);
+    }
+
+
+    .gamburger input:checked {
+        opacity: 0;
+        width: 0;
+    }
+
+    .gamburger:has(input:checked)+.nav {
+        display: flex;
+        margin-top: 5px;
+    }
+
+    .myWork {
+        width: 100%;
+    }
+
+    .myWork h1 {
+        font-size: 2.8rem;
+    }
+
+    .myWork p {
+        width: 90%;
+    }
+
+    .tools {
+        width: 100vw;
+    }
+
+    .tools img {
+        width: 25%;
+
+    }
+
+    .project {
+        width: 100vw;
+        height: 700px;
+    }
+
+    .project img {
+        width: 90%;
+        height: 300px;
+        box-shadow: 0px 0px 40px #00000066;
+    }
+
+    .rights p {
+        font-size: 1.4rem;
+
+    }
+}

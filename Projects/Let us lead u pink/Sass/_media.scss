@@ -1,0 +1,40 @@
+@media (max-width:768px) {
+    .container {
+        height: 30vh;
+        width: 100vw;
+
+
+    }
+
+    .head {
+        width: 100%;
+    }
+
+    .head h1,
+    p {
+        text-align: center;
+    }
+
+
+
+    .form {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 80vw;
+    }
+
+    .label input {
+        width: 60vw;
+    }
+
+
+}
+
+@media (max-width:576px) {
+    .form p {
+        padding: 20px;
+    }
+}

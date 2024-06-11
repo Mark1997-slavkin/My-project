@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url("../Image/pink.png");
+    height: 50vh;
+}
+
+.form {
+    width: 569px;
+    height: 600px;
+    background: #1A1A1AD4 0% 0% no-repeat padding-box;
+    position: absolute;
+    right: 200px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    direction: rtl;
+}
+
+.head {
+    width: 417px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label label {
+    display: block;
+}
+
+.head h1 {
+    color: #FFFFFF;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: "Heebo"
+}
+
+.head p {
+    margin-top: 7px;
+    color: #F9F9F9;
+    font-size: 16px;
+    width: 380px;
+    font-family: "Heebo"
+
+}
+
+.label label {
+    font-size: 16px;
+    color: white;
+}
+
+.label input {
+    width: 418px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    width: 166px;
+    height: 50px;
+    background-color: #D31C75;
+    color: #FFFFFF;
+    margin-top: 34px;
+    background: #D31C75 0% 0% no-repeat padding-box;
+    border: none;
+    font-size: 22px;
+    font-family: "Heebo";
+}
+
+.form form {
+    margin-bottom: 80px;
+}

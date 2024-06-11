@@ -1,0 +1,106 @@
+body {
+    direction: rtl;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.display-1 {
+    font-family: "Satisfy", regular;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    margin-top: 90px;
+}
+
+#l-header {
+    text-align: center;
+    color: white;
+    font-family: "Varela Round";
+}
+
+#p-header {
+    text-align: center;
+    color: white;
+    font-family: "Varela Round";
+    font-size: 20px;
+}
+
+#input-1 input {
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    border-radius: 0;
+    height: 40px;
+}
+
+#input-2 input {
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    border-radius: 0;
+    height: 40px;
+}
+
+#input-1 label {
+    font-family: "Varela Round";
+    color: white;
+}
+
+#input-2 label {
+    font-family: "Varela Round";
+    color: white;
+}
+
+#btn-form {
+    background-color: #FFFFFF !important;
+    border-radius: 0;
+    color: #2823FD;
+    font-family: "Varela Round";
+    border-color: white;
+    height: 40px;
+}
+
+@media(min-width:769px) {}
+
+
+@media(min-width:992px) {
+    form {
+        display: flex;
+        gap: 20px;
+    }
+
+    form .btn {
+        margin-top: 17px;
+
+    }
+
+    .display-1 {
+        font-size: 100px;
+    }
+
+    #l-header {
+        font-size: 32px;
+    }
+
+    #p-header {
+        font-size: 16px;
+    }
+}
+
+@media(min-width:1200px) {
+    .display-1 {
+        font-size: 160px;
+        margin-top: 24vh;
+        margin-bottom: -40px;
+    }
+
+    .forme {
+        margin-top: -60px;
+    }
+}
