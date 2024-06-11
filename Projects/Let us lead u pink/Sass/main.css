@@ -29,18 +29,12 @@
   flex-direction: column;
   align-items: center;
 }
-
-.label label {
-  display: block;
-}
-
 .head h1 {
   color: #FFFFFF;
   font-size: 36px;
   margin-bottom: 20px;
   font-family: "Heebo";
 }
-
 .head p {
   margin-top: 7px;
   color: #F9F9F9;
@@ -50,10 +44,13 @@
 }
 
 .label label {
-  font-size: 16px;
-  color: white;
+  display: block;
 }
 
+.label label {
+  font-size: 16px;
+  color: #FFFFFF;
+}
 .label input {
   width: 418px;
   height: 50px;
@@ -63,10 +60,10 @@
 .btn {
   width: 166px;
   height: 50px;
-  background-color: #D31C75;
+  background-color: #ff1493;
   color: #FFFFFF;
   margin-top: 34px;
-  background: #D31C75 0% 0% no-repeat padding-box;
+  background: #ff1493 0% 0% no-repeat padding-box;
   border: none;
   font-size: 22px;
   font-family: "Heebo";
