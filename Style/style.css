@@ -379,8 +379,10 @@ button:hover {
 
 .rights p {
     color: red;
+    background-color: yellow;
     font-size: 2rem;
     font-weight: 800;
+    margin: 15px;
 
 }
 
@@ -497,7 +499,7 @@ button:hover {
     }
 
     .aboutMe img {
-        width: 90vw;
+        width: 70vw;
         margin: auto;
     }
 
