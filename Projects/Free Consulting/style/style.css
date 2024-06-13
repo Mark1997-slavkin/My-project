@@ -207,16 +207,21 @@ body {
         height: 50vh;
     }
 
+    .bigHeader {
+        margin-top: -40px;
+    }
 
     .bigHeader h1 {
         text-align: center;
         width: 300px;
+        font-size: 45px;
 
     }
 
     .bigHeader p {
         text-align: center;
         width: 300px;
+        margin-top: 10px;
     }
 
     .onetwo {
