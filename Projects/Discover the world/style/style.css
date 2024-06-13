@@ -175,11 +175,13 @@ img {
 .label input {
     height: 60px;
     width: 97%;
+    border-bottom: 3px solid #0EE1DA;
 }
 
 .expo textarea {
     height: 172px;
     width: 97%;
+    border-bottom: 3px solid #0EE1DA;
 }
 
 .form {
@@ -332,33 +334,45 @@ img {
     }
 }
 
-/* .label input {
-    height: 60px;
-} */
+@media(max-width:475px) {
+    .label input {
+        height: 30px;
+    }
 
-/* .expo textarea {
-    height: 95px;
+    .expo textarea {
+        height: 100px;
+    }
 }
- */
-/* .btn {
-    height: 33px;
+
+@media(max-width:420px) {
+    .btn {
+        height: 50px;
+    }
 }
- */
-/* .forms {
-    margin-top: 0;
+
+@media(max-width:400px) {
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .forms {
+        margin-top: 0;
+    }
+
+    .label input {
+        height: 20px;
+    }
+
+    .expo textarea {
+        height: 70px;
+    }
+
+    .btn {
+        height: 35px;
+        font-size: 15px;
+    }
 }
- */
-/* .heading h1 {
-    font-size: 25px;
-
-} */
-
-/* .form {
-    padding: 58px 25px;
-
-} */
-
-/* 
-.heading p {
-    font-size: 15px;
-} */

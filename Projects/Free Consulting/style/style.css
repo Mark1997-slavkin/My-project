@@ -275,3 +275,26 @@ body {
 
 
 }
+
+@media(max-height:765px) {
+    .one input {
+        height: 30px;
+    }
+
+    .two input {
+        height: 30px;
+    }
+
+    .textarea textarea {
+        height: 100px;
+    }
+
+    .btn {
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .icons img {
+        margin: 8px;
+    }
+}

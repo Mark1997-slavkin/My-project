@@ -567,4 +567,20 @@ button:hover {
     .contact form ul li textarea {
         width: 90%;
     }
+
+}
+
+@media (max-width:576px) {
+    .selectedProjects p {
+        margin-top: 35px;
+    }
+
+    .rights p {
+        font-size: 1.5rem;
+    }
+
+    .connectRows p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
 }
