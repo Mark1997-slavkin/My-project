@@ -424,6 +424,7 @@ button:hover {
     #navBox {
         flex-direction: column-reverse;
         align-items: center;
+        margin-right: 0;
     }
 
     .gamburger::before,
@@ -439,6 +440,7 @@ button:hover {
     }
 
 
+
     .gamburger {
         --x-width: calc(var(--hamburger-height) * 1.41421356237);
         display: flex;
@@ -448,7 +450,8 @@ button:hover {
         width: max-content;
         position: absolute;
         top: 10px;
-        left: 5px;
+        left: 1px;
+        min-width: 70px;
         z-index: 2;
         cursor: pointer;
     }

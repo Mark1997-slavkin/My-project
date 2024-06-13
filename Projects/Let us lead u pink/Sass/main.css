@@ -6,6 +6,7 @@
 
 .container {
   background-image: url("../Image/pink.png");
+  background-size: cover;
   height: 50vh;
 }
 
