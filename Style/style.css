@@ -605,6 +605,7 @@ button:hover {
 
     .rights p {
         font-size: 1.5em;
+        width: 90%;
     }
 
     .connectRows p {
@@ -612,8 +613,8 @@ button:hover {
         text-align: center;
     }
 
-    .projectsBox a {
-        margin-top: -10px;
+    #redBox {
+        margin-top: 45px;
     }
 
 

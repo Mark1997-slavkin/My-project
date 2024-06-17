@@ -136,11 +136,13 @@
 @media (max-width: 576px) {
     .titles h1 {
         font-size: 1.6em;
-        padding: 15px;
+        width: 90%;
+        padding: 5px;
+        font-weight: 900;
     }
 
     .titles p {
         font-size: 1.2em;
-        padding: 15px;
+        padding: 5px;
     }
 }
