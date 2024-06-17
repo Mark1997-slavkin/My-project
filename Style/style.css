@@ -193,6 +193,13 @@ html {
 
 .projectsRow {
     margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thirdRowBox {
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
@@ -206,6 +213,15 @@ html {
     box-shadow: 3px 3px 15px #00000029;
     border-radius: 10px;
     text-align: center;
+}
+
+
+.projectsBox2 {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projectsBox a {
@@ -394,6 +410,10 @@ button:hover {
         margin-top: 30px;
     }
 
+    .last {
+        margin-top: 30px;
+    }
+
     .connect {
         display: grid;
         grid-template-columns: 33.3% 33.3% 33.3%;
@@ -515,6 +535,10 @@ button:hover {
         margin-top: 80px;
     }
 
+    .thirdRowBox {
+        margin-top: -30px;
+    }
+
     .projectsBox .titles {
         margin-top: 0px;
     }
@@ -580,13 +604,15 @@ button:hover {
     }
 
     .rights p {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     .connectRows p {
         font-size: 0.8rem;
         text-align: center;
     }
+
+
 
 
 }

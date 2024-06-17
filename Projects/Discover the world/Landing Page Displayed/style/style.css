@@ -187,8 +187,10 @@ body {
 
 .rights p {
     color: red;
+    background-color: yellow;
     font-size: 2rem;
     font-weight: 800;
+    margin: 15px;
 
 }
 
