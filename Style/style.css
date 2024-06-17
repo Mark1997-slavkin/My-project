@@ -612,7 +612,9 @@ button:hover {
         text-align: center;
     }
 
-
+    .projectsBox a {
+        margin-top: -10px;
+    }
 
 
 }
