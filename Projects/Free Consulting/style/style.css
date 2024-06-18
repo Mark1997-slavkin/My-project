@@ -303,3 +303,14 @@ body {
         margin: 8px;
     }
 }
+
+@media(max-width:440px) {
+    .icons img {
+        width: 35px;
+        padding: 6px;
+    }
+
+    .bigHeader h1 {
+        font-size: 35px;
+    }
+}
