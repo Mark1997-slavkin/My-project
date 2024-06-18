@@ -307,13 +307,6 @@ img {
         grid-area: container;
     }
 
-    /*  .header {
-        height: 292px;
-    }
-
-    .container {
-        height: 438px;
-    } */
 }
 
 @media(max-width:576px) {

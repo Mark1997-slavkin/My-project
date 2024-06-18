@@ -20,7 +20,6 @@ body {
 
 .big {
     width: 60vw;
-    /*    border-right: black 1px solid; */
 
 }
 
@@ -124,7 +123,6 @@ body {
 
 .bottom {
     position: absolute;
-    /* margin-bottom: -100px; */
     left: 0;
     bottom: 0;
     width: 56vw;
@@ -267,7 +265,6 @@ body {
     }
 
     .icons img {
-        /* position: relative; */
         width: 45px;
         padding: 9px;
         margin: 19px;
