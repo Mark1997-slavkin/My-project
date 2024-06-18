@@ -133,11 +133,16 @@
     .container p {
         font-size: 1.2em;
     }
+
 }
 
 
 
-@media(max-width:400px) {
+@media(max-width:450px) {
+    .container {
+        height: 45vh;
+    }
+
     .container h1 {
         font-size: 2em;
     }
