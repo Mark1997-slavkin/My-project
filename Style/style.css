@@ -548,7 +548,6 @@ button:hover {
         height: auto;
     }
 
-
     .contact h2 {
         margin-top: 10px;
     }
@@ -618,7 +617,7 @@ button:hover {
     }
 
     .projectsLang img {
-        margin-bottom: 25px;
+        margin-bottom: 35px;
     }
 
 }
