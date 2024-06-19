@@ -193,7 +193,6 @@ html {
 }
 
 .projectsBox {
-
     width: 405px;
     height: 518px;
     box-shadow: 3px 3px 15px #00000029;
@@ -203,7 +202,6 @@ html {
 
 
 .projectsBox2 {
-
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
