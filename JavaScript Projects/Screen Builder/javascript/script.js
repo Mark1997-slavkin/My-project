@@ -1,6 +1,5 @@
 const emptyContainer = document.getElementById("empty-container");
 document.getElementById('insert-button').addEventListener('click', function () {
-    // Collects the elements from user...
     const elementType = document.getElementById("element-type").value;
     const elementWidth = document.getElementById("element-width").value + "px";
     const elementHeight = document.getElementById("element-height").value + "px";
@@ -9,7 +8,6 @@ document.getElementById('insert-button').addEventListener('click', function () {
     const fontColor = document.getElementById("font-color").value;
     const fontSize = document.getElementById("font-size").value + "px";
     const fontFamily = document.getElementById("font-family").value;
-    // Add everything up for a new element
     const newElement = document.createElement(elementType);
     newElement.style.width = elementWidth;
     newElement.style.height = elementHeight;
@@ -18,12 +16,9 @@ document.getElementById('insert-button').addEventListener('click', function () {
     newElement.style.color = fontColor;
     newElement.style.fontSize = fontSize;
     newElement.style.fontFamily = fontFamily;
-    //Actually puts it inside the larger div
     emptyContainer.appendChild(newElement);
 });
 
 document.getElementById('cleanup-button').addEventListener('click', function () {
-    //Just removes all text written in the html inside that div.
-    //Ultimatly just removes all elements inside the larger div!
     emptyContainer.innerHTML = '';
 });
