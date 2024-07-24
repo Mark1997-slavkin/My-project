@@ -16,7 +16,7 @@ let btn = document.getElementById('search-button').addEventListener('click', () 
     let feelsLike = document.getElementById('feels-like');
     let capital = document.getElementById('capital');
     let windSpeed = document.getElementById('wind-speed');
-    fetch("http://api.weatherapi.com/v1/current.json?key=8a7734346ab643e89f1151748242207&q=" + city.value.toLowerCase() + "&aqi=no", requestOptions)
+    fetch("https://api.weatherapi.com/v1/current.json?key=8a7734346ab643e89f1151748242207&q=" + city.value.toLowerCase() + "&aqi=no", requestOptions)
         .then((response) => response.json())
         .then((result) => {
             cityName.innerText = city.value.toUpperCase() + ", " + result.location.country.toUpperCase() + ".";
