@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Page</title>
+  <style>
+    #logoutButton {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #logoutButton:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="logoutButton" onclick="logout()">Logout</button>
+  <h1>Page for logged in users</h1>
+  <p id="greeting"></p>
+  <script>
+    let p = document.getElementById('greeting');
+    let currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if (currentUser == null) {
+      window.location = "login.html"
+    }
+    p.innerText = "Welcome back to our site " + currentUser.name;
+    document.getElementById('logoutButton').addEventListener('click', () => {
+      localStorage.removeItem("currentUser");
+      window.location = "login.html"
+    })
+  </script>
+</body>
+
+</html>
