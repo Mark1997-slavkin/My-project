@@ -38,6 +38,18 @@ export const createCard = (country) => {
   population.className = "card-text";
   population.textContent = `Population: ${country.population.toLocaleString()}`;
 
+  const capital = document.createElement("p");
+  capital.className = "card-text";
+  capital.textContent = `Capital: ${country.capital[0]}`;
+
+  const region = document.createElement("p");
+  region.className = "card-text";
+  region.textContent = `Region: ${country.region}`;
+
+  const unMember = document.createElement("p");
+  unMember.className = "card-text";
+  unMember.textContent = `is UN member: ${country.unMember}`;
+
   const cardFooter = document.createElement("div");
   cardFooter.className = "card-footer d-flex justify-content-center mb-2";
 
@@ -47,6 +59,8 @@ export const createCard = (country) => {
   heart.addEventListener("click", () => {
     if (heart.className === "bi bi-heart") {
       heart.className = "bi bi-heart-fill";
+      const savedCountry = JSON.stringify(country.name.common)
+      localStorage.setItem(`${country.name.common}`, savedCountry)
     } else {
       heart.className = "bi bi-heart";
     }
@@ -55,6 +69,9 @@ export const createCard = (country) => {
   card.appendChild(cardImg);
   cardBody.appendChild(cardTitle);
   cardBody.appendChild(population);
+  cardBody.appendChild(capital);
+  cardBody.appendChild(region);
+  cardBody.appendChild(unMember);
   cardFooter.appendChild(heart);
   card.appendChild(cardBody);
   card.appendChild(cardFooter);

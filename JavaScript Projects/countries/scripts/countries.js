@@ -6,7 +6,7 @@ const getCountries = async () => {
 
 const countriesFull = await getCountries();
 let countries = [...countriesFull];
-
+console.log(countriesFull);
 const search = (text) => {
   countries = countries.filter((country) => {
     let name = country.name.common.toLowerCase();
