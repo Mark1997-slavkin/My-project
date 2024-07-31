@@ -7,14 +7,6 @@ searchInput.addEventListener("keydown", (event) => {
   cardsDiv.innerHTML = "";
   search(event.target.value.trim());
   createCardList();
-
-  //   if (event.target.value == "") {
-  //     createCardList();
-  //     console.log("im here!");
-  //   } else {
-  //     search(event.target.value);
-  //     createCardList();
-  //   }
 });
 
 const cardsDiv = document.getElementById("cards");
@@ -31,7 +23,6 @@ export const createCard = (country) => {
   cardBody.className = "card-body";
 
   const cardTitle = document.createElement("h5");
-  cardTitle.className = "card-title";
   cardTitle.textContent = country.name.common;
 
   const population = document.createElement("p");
@@ -56,13 +47,20 @@ export const createCard = (country) => {
   const heart = document.createElement("i");
   heart.className = "bi bi-heart";
 
+
+  const likedCountries = loadLikedCountries();
+  if (likedCountries.includes(country.name.common)) {
+    heart.className = "bi bi-heart-fill";
+  }
+
   heart.addEventListener("click", () => {
     if (heart.className === "bi bi-heart") {
       heart.className = "bi bi-heart-fill";
-      const savedCountry = JSON.stringify(country.name.common)
-      localStorage.setItem(`${country.name.common}`, savedCountry)
+      const savedCountry = JSON.stringify(country.name.common);
+      localStorage.setItem(`${country.name.common}`, savedCountry);
     } else {
       heart.className = "bi bi-heart";
+      localStorage.removeItem(`${country.name.common}`);
     }
   });
 
@@ -83,3 +81,26 @@ export const createCardList = () => {
     createCard(country);
   }
 };
+
+
+const loadLikedCountries = () => {
+  const likedCountries = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    const country = JSON.parse(localStorage.getItem(key));
+    likedCountries.push(country);
+  }
+  return likedCountries;
+};
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const likedCountries = loadLikedCountries();
+  for (const countryName of likedCountries) {
+    const country = countries.find(c => c.name.common === countryName);
+    if (country) {
+      createCard(country);
+    }
+  }
+  createCardList();
+});
