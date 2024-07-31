@@ -2,14 +2,15 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     height: 100vh;
     background-color: #A9A9A9;
     font-family: Arial, sans-serif;
 }
 
 .container {
-    height: 100vh;
-    width: 20vw;
+    height: auto;
+    width: 100vw;
     background-color: #1A003E;
     color: white;
     padding: 20px;
@@ -30,8 +31,8 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100vh;
-    width: 80vw;
+    height: auto;
+    width: 100vw;
     text-overflow: ellipsis;
 }
 
@@ -69,4 +70,36 @@ button#cleanup-button {
 
 button:hover {
     opacity: 0.9;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    body {
+        flex-direction: row;
+    }
+
+    .container {
+        height: 100vh;
+        width: 20vw;
+    }
+
+    #empty-container {
+        height: 100vh;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100vw;
+    }
+
+    #empty-container {
+        width: 100vw;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
 }
